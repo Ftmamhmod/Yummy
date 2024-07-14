@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <meta name="keywords" content="Meals, recipes , وصفات اكل" />
+  <meta name="author" content="Fatma Mahmoud" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body>
+  <!-- Home Page -->
+   
+  <!-- <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black d-flex justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+  </div> -->
+  <section class="home bg-black min-vh-100">
+    <nav class="min-vh-100 position-fixed d-flex">
+
+      <div class="navBody text-white p-4 d-flex flex-column justify-content-between">
+        <div class="list overflow-hidden">
+          <ul class="list-unstyled  position-relative">
+            <li onclick="showSearchInputs()" style="cursor: pointer;" class="py-2">Search</li>
+            <li onclick="getCategories()" style="cursor: pointer;" class="py-2 ">Categories</li>
+            <li onclick="getArea()" style="cursor: pointer;" class="py-2 ">Area</li>
+            <li onclick="getIngredients()" style="cursor: pointer;" class="py-2 ">Ingredients</li>
+            <li onclick="showContacts()" style="cursor: pointer;" class="py-2 ">Contact Us</li>
+          </ul>
+          
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixedNav d-flex flex-column bg-white justify-content-between text-center p-2">
+
+        <img onclick="getMainMeals()" style="cursor: pointer;" class="logo " src="./images/logo.png" alt="logo">
+        <i style="cursor: pointer;" onclick="" class=" open-close-icon fa-solid  fa-align-justify fa-2x"></i>
+        <div class="p-3">
+          <i style="cursor: pointer;" class="fa-solid fa-globe d-block"></i>
+          <i style="cursor: pointer;" class="fa-solid fa-share-nodes"></i>
+        </div>
+
+      </div>
+    </nav>
+    <main class="p-4">
+      <div class="d-none container w-75" id="searchContainer">
+
+      </div>
+      <div class="container">
+        <div class="row " id="rowData">
+          <div
+            class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black d-flex justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
