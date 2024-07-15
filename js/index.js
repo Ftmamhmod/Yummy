@@ -212,6 +212,18 @@ function displayCategories(arr) {
   rowData.innerHTML = categories
 }
 
+// get meals by categories 
+
+async function getCategoryMeals(category) {
+  rowData.innerHTML = ""
+
+  let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
+  response = await response.json()
+
+  displayMeals(response.meals.slice(0, 20))
+
+}
+
 // get area
 async function getArea() {
   CloseNav()
@@ -248,7 +260,7 @@ async function getAreaMeals(area) {
 
 
   displayMeals(response.meals.slice(0, 20))
-  $(".inner-loading-screen").fadeOut(300)
+
 
 }
 
