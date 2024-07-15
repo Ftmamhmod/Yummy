@@ -198,7 +198,7 @@ function displayCategories(arr) {
   for (let i = 0; i < arr.length - 2; i++) {
     categories += `
       <div class="col-md-3">
-              <div onclick="getCategoryMeals('${arr[i].strCategory}')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+              <div style="cursor: pointer;" onclick="getCategoryMeals('${arr[i].strCategory}')" class="meal position-relative overflow-hidden rounded-2">
                   <img class="w-100" src="${arr[i].strCategoryThumb}" alt="" srcset="">
                   <div class="meal-layer position-absolute text-center text-black p-2">
                       <h3>${arr[i].strCategory}</h3>
