@@ -61,11 +61,11 @@ function displayMeals(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     mealBox += `
-    <div class="col-md-3 py-3" style="cursor: pointer;">
+    <div class="col-md-3 py-3" style="cursor: pointer ;">
           <div onclick="getMealDetails('${arr[i].idMeal}')" class="meal position-relative overflow-hidden rounded-3">
             <img class="img-fluid" src="${arr[i].strMealThumb}" alt="">
-            <div class="meal-layer position-absolute d-flex align-items-center text-black p-2">
-              <h3>${arr[i].strMeal}</h3>
+            <div class="meal-layer  position-absolute d-flex align-items-center text-black p-2">
+              <h3 class="m-auto">${arr[i].strMeal}</h3>
             </div>
           </div>
         </div>  
